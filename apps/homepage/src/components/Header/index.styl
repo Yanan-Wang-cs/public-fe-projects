@@ -1,0 +1,24 @@
+.header,.header-mobile
+  display flex
+  flex-flow row nowrap
+  align-items center
+  justify-content space-between
+  padding 16px 20px
+  width 100%
+.header .ant-menu-horizontal
+  border-bottom none
+.header .ant-menu-light
+  background: transparent
+  color #fff
+.header-mobile
+  display none
+  position relative
+.menu-mobile
+  position absolute
+  top 50px
+  left 0
+@media screen and (max-width:600px)
+  .header
+    display none
+  .header-mobile
+    display flex
